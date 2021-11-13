@@ -24,8 +24,8 @@ struct PersonDetails: View {
                 Image(systemName: "phone")
                 Text("\(person.phone)")
             }
-            .navigationTitle("\(person.fullName())")
         }
+        .navigationTitle("\(person.fullName())")
     }
 }
 
