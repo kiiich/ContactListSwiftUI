@@ -9,15 +9,13 @@ import SwiftUI
 
 struct PersonDetails: View {
     
-    @Binding var isPresented: Bool
-    
     let person: Person
     
     var body: some View {
         List {
             Image(systemName: "person.circle")
                 .resizable()
-                .frame(width: 150, height: 150)
+                .frame(width: 150, height: 150, alignment: .center)
             HStack {
                 Image(systemName: "mail")
                 Text("\(person.email)")
@@ -26,18 +24,12 @@ struct PersonDetails: View {
                 Image(systemName: "phone")
                 Text("\(person.phone)")
             }
-            Button("Done") {
-                isPresented.toggle()
-            }
         }
     }
 }
 
 struct PersonDetails_Previews: PreviewProvider {
     static var previews: some View {
-        PersonDetails(
-            isPresented: .constant(true),
-            person: Person.getPersons().first!
-        )
+        PersonDetails(person: Person.getPersons().first!)
     }
 }

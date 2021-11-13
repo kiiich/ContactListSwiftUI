@@ -12,8 +12,11 @@ struct PersonListDetailed: View {
     let persons: [Person]
     
     var body: some View {
-        List(persons){person in
-            PersonData(person: person)
+        NavigationView {
+            List(persons) { person in
+                PersonData(person: person)
+            }
+            .navigationTitle("Information")
         }
     }
 }

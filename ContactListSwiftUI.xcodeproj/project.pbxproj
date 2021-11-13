@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		01451329273FC3A500759EB4 /* PersonRowSimple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01451328273FC3A500759EB4 /* PersonRowSimple.swift */; };
 		0145132B273FC59E00759EB4 /* PersonDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0145132A273FC59E00759EB4 /* PersonDetails.swift */; };
 		0145132D273FCD5500759EB4 /* PersonListDetailed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0145132C273FCD5500759EB4 /* PersonListDetailed.swift */; };
+		014513302740140D00759EB4 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0145132F2740140D00759EB4 /* DataManager.swift */; };
 		0147BE0F273FB4B400B07364 /* ContactListSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0147BE0E273FB4B400B07364 /* ContactListSwiftUIApp.swift */; };
 		0147BE11273FB4B400B07364 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0147BE10273FB4B400B07364 /* ContentView.swift */; };
 		0147BE13273FB4B600B07364 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0147BE12273FB4B600B07364 /* Assets.xcassets */; };
@@ -19,9 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		01451328273FC3A500759EB4 /* PersonRowSimple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonRowSimple.swift; sourceTree = "<group>"; };
 		0145132A273FC59E00759EB4 /* PersonDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetails.swift; sourceTree = "<group>"; };
 		0145132C273FCD5500759EB4 /* PersonListDetailed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonListDetailed.swift; sourceTree = "<group>"; };
+		0145132F2740140D00759EB4 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		0147BE0B273FB4B400B07364 /* ContactListSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactListSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0147BE0E273FB4B400B07364 /* ContactListSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListSwiftUIApp.swift; sourceTree = "<group>"; };
 		0147BE10273FB4B400B07364 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -50,6 +50,26 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		014513312740155D00759EB4 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				0145132F2740140D00759EB4 /* DataManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		014513322740165800759EB4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0145132A273FC59E00759EB4 /* PersonDetails.swift */,
+				0145132C273FCD5500759EB4 /* PersonListDetailed.swift */,
+				0147BE1E273FB9E900B07364 /* PersonListSimple.swift */,
+				0147BE10273FB4B400B07364 /* ContentView.swift */,
+				0147BE0E273FB4B400B07364 /* ContactListSwiftUIApp.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		0147BE02273FB4B400B07364 = {
 			isa = PBXGroup;
 			children = (
@@ -69,15 +89,11 @@
 		0147BE0D273FB4B400B07364 /* ContactListSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				014513312740155D00759EB4 /* Services */,
 				0145132E273FD1AC00759EB4 /* Models */,
+				014513322740165800759EB4 /* Views */,
 				0147BE14273FB4B600B07364 /* Preview Content */,
-				0147BE0E273FB4B400B07364 /* ContactListSwiftUIApp.swift */,
-				0147BE10273FB4B400B07364 /* ContentView.swift */,
-				0145132C273FCD5500759EB4 /* PersonListDetailed.swift */,
 				0147BE12273FB4B600B07364 /* Assets.xcassets */,
-				0147BE1E273FB9E900B07364 /* PersonListSimple.swift */,
-				01451328273FC3A500759EB4 /* PersonRowSimple.swift */,
-				0145132A273FC59E00759EB4 /* PersonDetails.swift */,
 			);
 			path = ContactListSwiftUI;
 			sourceTree = "<group>";
@@ -164,9 +180,9 @@
 				0147BE11273FB4B400B07364 /* ContentView.swift in Sources */,
 				0147BE1F273FB9EA00B07364 /* PersonListSimple.swift in Sources */,
 				0145132B273FC59E00759EB4 /* PersonDetails.swift in Sources */,
-				01451329273FC3A500759EB4 /* PersonRowSimple.swift in Sources */,
 				0145132D273FCD5500759EB4 /* PersonListDetailed.swift in Sources */,
 				0147BE0F273FB4B400B07364 /* ContactListSwiftUIApp.swift in Sources */,
+				014513302740140D00759EB4 /* DataManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
