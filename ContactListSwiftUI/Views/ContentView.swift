@@ -9,17 +9,9 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        TabView {
-            PersonListSimple(persons: Person.getPersons())
-                .tabItem {
-                    Image(systemName: "person.3.fill")
-                    Text("Persons")
-                }
-            PersonListDetailed(persons: Person.getPersons())
-                .tabItem {
-                    Image(systemName: "info.circle")
-                    Text("Information")
-                }
+        NavigationView {
+            TabViewLists()
+                .navigationTitle("Contact list")
         }
     }
 }
@@ -27,5 +19,22 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+    }
+}
+
+struct TabViewLists: View {
+    var body: some View {
+        TabView {
+            PersonListSimple(persons: Person.getPersons())
+                .tabItem {
+                    Image(systemName: "person.3.fill")
+                    Text("Contacts")
+                }
+            PersonListDetailed(persons: Person.getPersons())
+                .tabItem {
+                    Image(systemName: "phone.fill")
+                    Text("Numbers")
+                }
+        }
     }
 }
